@@ -18,7 +18,7 @@ Mass.append(Test3)
 Mass.append(Test4)
 Mass.append(Test5)
 for i in Mass:
-	result_regex = len(re.findall('=<\|', i))
+	result_regex = len(re.findall(r'=<\|', i))
 	result_python = i.count('=<|')
 	counter = result_regex
 	if result_regex == result_python:
