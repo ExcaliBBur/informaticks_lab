@@ -3,9 +3,10 @@ import re
 from json2xml import json2xml
 from json2xml.utils import readfromstring
 from time import time
+from datetime import datetime
 start_time_1 = time()
 for i in range(10):
-  f = open('raspisanie.json','r','utf_8_sig')
+  f = open('file.json','r','utf_8_sig')
   xml = '<?xml version="1.0" encoding="UTF-8" ?>\n<root>\n\t'
   while 1:
     line = f.readline()
@@ -24,8 +25,8 @@ for i in range(10):
         xml += soderjimoe[2:len(soderjimoe)-4] + '</' + teg[1:len(teg)-1] + '>' + "\n" + "\t"
       if ord(soderjimoe[1]) >= 47 and ord(soderjimoe[1]) <= 58:
       	xml += soderjimoe[1:len(soderjimoe)-3] + '</' + teg[1:len(teg)-1] + '>' + "\n" + "\t"
-      if soderjimoe[1] == '[':
-        if line[-3] == '[':
+      if soderjimoe[1] == '[' or soderjimoe[1] == '{':
+        if line[-3] == '[' or line[-3] == '{':
           xml += "\n" + "\t"
           const_teg = teg[1:len(teg)-1]
         else:
@@ -45,7 +46,7 @@ print(time()-start_time_1)
 #libraries
 start_time_2 = time()
 for i in range(10):
-  f = open('raspisanie.json','r','utf_8_sig').read()
+  f = open('file.json','r','utf_8_sig').read()
   data = readfromstring(f)
   xml = json2xml.Json2xml(data).to_xml()
   file = open('raspisanie_libr.xml','w','utf_8_sig')
@@ -55,7 +56,7 @@ print(time()-start_time_2)
 #regex
 start_time_3 = time()
 for i in range(10):
-  f = open('raspisanie.json','r','utf_8_sig')
+  f = open('file.json','r','utf_8_sig')
   xml = '<?xml version="1.0" encoding="UTF-8" ?>\n<root>\n\t'
   while 1:
     line = f.readline()
@@ -74,8 +75,8 @@ for i in range(10):
         xml += soderjimoe[2:len(soderjimoe)-4] + '</' + teg[1:len(teg)-1] + '>' + "\n" + "\t"
       if ord(soderjimoe[1]) >= 47 and ord(soderjimoe[1]) <= 58:
           xml += soderjimoe[1:len(soderjimoe)-3] + '</' + teg[1:len(teg)-1] + '>' + "\n" + "\t"
-      if soderjimoe[1] == '[':
-        if line[-3] == '[':
+      if soderjimoe[1] == '[' or soderjimoe[1] == '{':
+        if line[-3] == '[' or line[-3] == '{':
           xml += "\n" + "\t"
           const_teg = teg[1:len(teg)-1]
         else:
@@ -93,3 +94,4 @@ for i in range(10):
   file.write(xml)
   file.close()
 print(time()-start_time_3)
+print(datetime.now())

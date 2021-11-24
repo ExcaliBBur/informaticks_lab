@@ -1,69 +1,29 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <root>
-	<day>Среда</day>
-	<date>10</date>
-	<lessons>
-	<name>Программирование(Лаб)</name>
-	<time>08:20-09:50</time>
-	<weeks>3</weeks>
-	<weeks>5</weeks>
-	<weeks>7</weeks>
-	<weeks>9</weeks>
-	<weeks>11</weeks>
-	<weeks>13</weeks>
-	<weeks>15</weeks>
-	<weeks>17</weeks>
-	<address>Кронверский пр., д.49, лит.А</address>
-	<classroom>372</classroom>
-	<teacher>Сорокин Роман Борисович</teacher>
-	<form>Очно-дистанционна</form>
-	</lessons>
-	<lessons>
-	<name>Программирование(Лаб)</name>
-	<time>10:00-11:30</time>
-	<weeks>3</weeks>
-	<weeks>5</weeks>
-	<weeks>7</weeks>
-	<weeks>9</weeks>
-	<weeks>11</weeks>
-	<weeks>13</weeks>
-	<weeks>15</weeks>
-	<weeks>17</weeks>
-	<address>Кронверский пр., д.49, лит.А</address>
-	<classroom>372</classroom>
-	<teacher>Сорокин Роман Борисович</teacher>
-	<form>Очно-дистанционна</form>
-	</lessons>
-	<lessons>
-	<name>Основы профессиональной деятельности(Лаб)</name>
-	<time>11:40-13:10</time>
-	<weeks>3</weeks>
-	<weeks>5</weeks>
-	<weeks>7</weeks>
-	<weeks>9</weeks>
-	<weeks>11</weeks>
-	<weeks>13</weeks>
-	<weeks>15</weeks>
-	<weeks>17</weeks>
-	<address>Кронверский пр., д.49, лит.А</address>
-	<classroom>303/2(Усл)</classroom>
-	<teacher>Перминов Илья Валентинович</teacher>
-	<form>Очно-дистанционна</form>
-	</lessons>
-	<lessons>
-	<name>Основы профессиональной деятельности(Лаб)</name>
-	<time>13:30-15:00</time>
-	<weeks>3</weeks>
-	<weeks>5</weeks>
-	<weeks>7</weeks>
-	<weeks>9</weeks>
-	<weeks>11</weeks>
-	<weeks>13</weeks>
-	<weeks>15</weeks>
-	<weeks>17</weeks>
-	<address>Кронверский пр., д.49, лит.А</address>
-	<classroom>303/2(Усл)</classroom>
-	<teacher>Перминов Илья Валентинович</teacher>
-	<form>Очно-дистанционна</form>
-	</lessons>
+	<debug>on</debug>
+	<window>
+	<title>Sample Konfabulator Widget</title>
+	<name>main_window</name>
+	<width>500</width>
+	<height>50</height>
+	</window>
+	<window>
+	<image><image></image>
+	<src>Images/Sun.png</src>
+	<name>sun1</name>
+	<hOffset>250</hOffset>
+	<vOffset>250</vOffset>
+	<alignment>cente</alignment>
+	</window>
+	<window>
+	<text>
+	<data>Click Here</data>
+	<size>36</size>
+	<style>bold</style>
+	<name>text1</name>
+	<hOffset>250</hOffset>
+	<vOffset>100</vOffset>
+	<alignment>center</alignment>
+	<onMouseUp>sun1.opacity = (sun1.opacity / 100) * 90</onMouseUp>
+	</text>
 </root>

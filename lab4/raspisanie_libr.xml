@@ -1,79 +1,27 @@
 ﻿<?xml version="1.0" ?>
 <all>
-	<day type="str">Среда</day>
-	<date type="int">10</date>
-	<lessons type="list">
-		<item type="dict">
-			<name type="str">Программирование(Лаб)</name>
-			<time type="str">08:20-09:50</time>
-			<weeks type="list">
-				<item type="int">3</item>
-				<item type="int">5</item>
-				<item type="int">7</item>
-				<item type="int">9</item>
-				<item type="int">11</item>
-				<item type="int">13</item>
-				<item type="int">15</item>
-				<item type="int">17</item>
-			</weeks>
-			<address type="str">Кронверский пр., д.49, лит.А</address>
-			<classroom type="str">372</classroom>
-			<teacher type="str">Сорокин Роман Борисович</teacher>
-			<form type="str">Очно-дистанционная</form>
-		</item>
-		<item type="dict">
-			<name type="str">Программирование(Лаб)</name>
-			<time type="str">10:00-11:30</time>
-			<weeks type="list">
-				<item type="int">3</item>
-				<item type="int">5</item>
-				<item type="int">7</item>
-				<item type="int">9</item>
-				<item type="int">11</item>
-				<item type="int">13</item>
-				<item type="int">15</item>
-				<item type="int">17</item>
-			</weeks>
-			<address type="str">Кронверский пр., д.49, лит.А</address>
-			<classroom type="str">372</classroom>
-			<teacher type="str">Сорокин Роман Борисович</teacher>
-			<form type="str">Очно-дистанционная</form>
-		</item>
-		<item type="dict">
-			<name type="str">Основы профессиональной деятельности(Лаб)</name>
-			<time type="str">11:40-13:10</time>
-			<weeks type="list">
-				<item type="int">3</item>
-				<item type="int">5</item>
-				<item type="int">7</item>
-				<item type="int">9</item>
-				<item type="int">11</item>
-				<item type="int">13</item>
-				<item type="int">15</item>
-				<item type="int">17</item>
-			</weeks>
-			<address type="str">Кронверский пр., д.49, лит.А</address>
-			<classroom type="str">303/2(Усл)</classroom>
-			<teacher type="str">Перминов Илья Валентинович</teacher>
-			<form type="str">Очно-дистанционная</form>
-		</item>
-		<item type="dict">
-			<name type="str">Основы профессиональной деятельности(Лаб)</name>
-			<time type="str">13:30-15:00</time>
-			<weeks type="list">
-				<item type="int">3</item>
-				<item type="int">5</item>
-				<item type="int">7</item>
-				<item type="int">9</item>
-				<item type="int">11</item>
-				<item type="int">13</item>
-				<item type="int">15</item>
-				<item type="int">17</item>
-			</weeks>
-			<address type="str">Кронверский пр., д.49, лит.А</address>
-			<classroom type="str">303/2(Усл)</classroom>
-			<teacher type="str">Перминов Илья Валентинович</teacher>
-			<form type="str">Очно-дистанционная</form>
-		</item>
-	</lessons>
+	<debug type="str">on</debug>
+	<window type="dict">
+		<title type="str">Sample Konfabulator Widget</title>
+		<name type="str">main_window</name>
+		<width type="int">500</width>
+		<height type="int">500</height>
+	</window>
+	<image type="dict">
+		<src type="str">Images/Sun.png</src>
+		<name type="str">sun1</name>
+		<hOffset type="int">250</hOffset>
+		<vOffset type="int">250</vOffset>
+		<alignment type="str">center</alignment>
+	</image>
+	<text type="dict">
+		<data type="str">Click Here</data>
+		<size type="int">36</size>
+		<style type="str">bold</style>
+		<name type="str">text1</name>
+		<hOffset type="int">250</hOffset>
+		<vOffset type="int">100</vOffset>
+		<alignment type="str">center</alignment>
+		<onMouseUp type="str">sun1.opacity = (sun1.opacity / 100) * 90;</onMouseUp>
+	</text>
 </all>

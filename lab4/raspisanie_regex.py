@@ -19,8 +19,8 @@ while 1:
       xml += soderjimoe[2:len(soderjimoe)-4] + '</' + teg[1:len(teg)-1] + '>' + "\n" + "\t"
     if ord(soderjimoe[1]) >= 47 and ord(soderjimoe[1]) <= 58:
         xml += soderjimoe[1:len(soderjimoe)-3] + '</' + teg[1:len(teg)-1] + '>' + "\n" + "\t"
-    if soderjimoe[1] == '[':
-      if line[-3] == '[':
+    if soderjimoe[1] == '[' or soderjimoe[1] == '{':
+      if line[-3] == '[' or line[-3] == '{':
         xml += "\n" + "\t"
         const_teg = teg[1:len(teg)-1]
       else:
