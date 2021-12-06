@@ -1,0 +1,65 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{multicol}%столбцы
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage[left=0.5cm,right=0.5cm,top=2cm,bottom=1.5cm]{geometry}%отступы
+\usepackage{amsmath}
+\usepackage{nccmath}
+\usepackage{textpos}
+\usepackage{graphicx}%для картинок
+\usepackage{xfrac}%для диагональной дроби
+\pagestyle{empty}%выключение нумерации страниц
+\graphicspath{{pictures/}}
+\setlength{\columnsep}{2em}
+
+\begin{document}
+	\begin{flushleft}
+	\textit{36}
+	\begin{textblock*}{100mm}(85mm,-3mm)
+	\textit{КВАНТ $\cdot$1997 / №5}
+	\end{textblock*}
+	\vspace{6cm}
+	\end{flushleft}
+	\begin{center}
+		\large{\textbf{ФИЗИЧЕСКИЙ ФАКУЛЬТАТИВ}}\\
+		\noindent\rule{20cm}{0.4pt}
+	\end{center}
+	\begin{textblock*}{90mm}(15mm,5mm)
+	\Huge{\textbf{Принцип суперпозиции и напряженности\\ электрического поля}}
+	\\ \\
+	\Large{\textbf{Д.АЛЕКСАНДРОВ}}
+	\end{textblock*}
+	\begin{textblock*}{50mm}(10mm,55mm)
+	\Huge{\textbf{Н}}
+	\end{textblock*}
+	\begin{textblock*}{57mm}(17mm,55mm)
+	АПРЯЖЕННОСТЬ поля, создаваемого неподвижным точечным за-
+	\end{textblock*}
+	\begin{textblock*}{64mm}(10mm,63mm)
+	рядом можно найти из закона Кулона. Получается 
+$$\vec{E}=\frac{q}{4\pi\epsilon_{0}r^3}\vec{r}, E=\frac{q}{4\pi\epsilon_{0}r^2}.$$
+	Для неточечного заряженного тела задача нахождения напряженности поля сложнее. Один из методов ее решения состоит в разбиении на точечные заряды и применении принципа суперпозиции, согласно которому поле нескольких зарядов равно векторной сумме полей каждого из них. В принципе, этот метод универсален. Он позволяет найти поле в любой ситуации, если известно расположение создающх его зарядов. Единственная проблема - вычислить получающуюся сумму. Разберем несколько практически важных примеров, когда 
+	\end{textblock*}
+	\begin{textblock*}{64mm}(78mm,56mm)
+	это удается сделать сравнительно просто. \par Начнем с совсем простого примера - найдем поле равномерно заряженного кольца на его оси (рис.1). \par
+	Разобьём кольцо на маленькие кусочки и найдем поля $i$-го кусочка в
+	\begin{center}
+	\includegraphics[scale=0.5]{test}
+	\end{center}
+	\begin{flushleft}
+	\textit{Рис. 1}
+	\end{flushleft}
+	\end{textblock*}
+	\begin{textblock*}{50mm}(148mm,5mm)
+	интересующей нас точке:
+	$$E_i=\frac{q_{i}}{4\pi\epsilon_0l^2}.$$
+	Поле всего кольца равно 
+	$$\vec{E}=\sum\vec{E_i}.$$
+	Модуль вектора $ \vec{E} $, конечно, не равен сумме модулей отдельных слагаемых, поэтому сначала учтем симметрию задачи и избавимся от векторногоси суммы. Понятно, что перпендикулярные поля при суммировании сократятся, а параллельные просто сложатся и для модуля результирующего поля можно записать
+	$$E=\sum E_{i\parallel}=\sum \frac{q_i\cos\alpha}{4\pi\epsilon_0l^2}.$$
+\par В любой сумме одинаковые для всех слагаемых множителя можно выносить за скобки. В нашем случае l и a одинаковы для всех кусочков. Заряды $q_i$ зависят от того, как мы разрезали кольцо, и в принципе могут быть произвольными (но достаточно малыми). Индекс <<i>>, таким образом, не только нумерует кусочки, но и подсказывает нам, что эту величину нельзя вынести за знак суммы. В резульате суммирования получим \\
+$E=\dfrac{\cos\alpha}{4\pi\epsilon_0l^2}\sum q_i =$
+	$$=\frac{Q\cos\alpha}{4\pi\epsilon_0l^2}=\frac{Qh}{4\pi\epsilon_0(h^2+R^2)^{\sfrac{3}{2}}}$$
+	\end{textblock*}
+\end{document}
